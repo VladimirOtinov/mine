@@ -1,7 +1,8 @@
-alphabet='абвгдеёжзии́клмнопрстуфхцчшщъыьэюя'
+alphabet='абвгдеёжзийклмнопрстуфхцчшщъыьэюяабв'
 test=''
 i=0
 word=input()
-for i in range(len(word)):
-    test=test.append(alphabet[alphabet.find(word[i]+3)])
+while i < len(word):
+    test+=alphabet[alphabet.find(word[i])+3]
+    i+=1
 print(test)
