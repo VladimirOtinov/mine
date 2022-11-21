@@ -1,0 +1,6 @@
+alphabet='абвгдеёжзии́клмнопрстуфхцчшщъыьэюя'
+test=''
+i=0
+word=input()
+while True:
+    
