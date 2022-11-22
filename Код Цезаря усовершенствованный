@@ -5,21 +5,18 @@ if lang!=1 and lang!=2:
 	while lang!=1 and lang!=2:
 		print('кажется,вы немного ошиблись с выбором языка, попробуйте снова ввести цифру, соответствующую языку(1-русский,2-английский)')
 		lang=int(input())
-test=''
+otvet=''
 i=0
 word=input('введите текст\n')
 step=int(input('введите шаг\n'))
 if step < len(alphabet_en)-3:
 	alphabet_en+=alphabet_en[0:step+1]
 	alphabet_ru+=alphabet_ru[0:step+1]
-elif step>len(alphabet_en)-3:
-	alphabet_ru,alphabet_en=step//30+2,step//25+2
 if lang==1:
 	for i in range (len(word)):
-	   	test+=alphabet_ru[alphabet_ru.find(word[i])+step]
+	   	otvet+=alphabet_ru[alphabet_ru.find(word[i])+step]
 	   	i+=1
 elif lang==2:
 	for i in range (len(word)):
-		test+=alphabet_en[alphabet_en.find(word[i])+step]
-print(test)
-
+		otvet+=alphabet_en[alphabet_en.find(word[i])+step]
+print(otvet)
