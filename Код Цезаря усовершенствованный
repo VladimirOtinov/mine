@@ -22,3 +22,4 @@ elif lang==2:
 	for i in range (len(word)):
 		test+=alphabet_en[alphabet_en.find(word[i])+step]
 print(test)
+
