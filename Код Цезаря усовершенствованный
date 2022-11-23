@@ -15,7 +15,6 @@ if step < len(alphabet_en)-3:
 if lang==1:
 	for i in range (len(word)):
 	   	otvet+=alphabet_ru[alphabet_ru.find(word[i])+step]
-	   	i+=1
 elif lang==2:
 	for i in range (len(word)):
 		otvet+=alphabet_en[alphabet_en.find(word[i])+step]
