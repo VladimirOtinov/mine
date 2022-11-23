@@ -1,4 +1,4 @@
-def cesar(otvet):
+'''def cesar(otvet):
     alphabet_ru='абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
     alphabet_en='abcdefghijklmnopqrstuvwxyz'
     lang=int(input(('введите число,соответствующее языку для которого хотите применить шифр:\n\t1)русский\n\t2)английский\n')))
@@ -19,6 +19,7 @@ def cesar(otvet):
  	    for i in range (len(word)):
 	            otvet+=alphabet_en[alphabet_en.find(word[i])+step]
     print(otvet) #либо, если нужно вернуть, не отпечатав: return otvet'''
+#верхнее не работает
 
 alphabet_ru='абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
 alphabet_en='abcdefghijklmnopqrstuvwxyz'
