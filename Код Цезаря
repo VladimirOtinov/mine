@@ -1,6 +1,6 @@
 alphabet='абвгдеёжзийклмнопрстуфхцчшщъыьэюя'*2
 test=''
 word=input()
-for i in range(word):
+for i in range(len(word)):
     test+=alphabet[alphabet.find(word[i])+3]
 print(test)
