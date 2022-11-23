@@ -19,4 +19,3 @@ def cesar():
         for i in range (len(word)):
             otvet += alphabet_en[alphabet_en.find(word[i])+step]
     print(otvet)
-print(cesar())
